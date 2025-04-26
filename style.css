@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background: rgb(128, 39, 245);
+    font-weight: bold;
+    text-align: center;
+    border: 6px solid rgb(157, 209, 243);
+    width: 400px;
+    height: 400px;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 40px;
+}
