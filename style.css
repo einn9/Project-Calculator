@@ -1,21 +1,71 @@
 .header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    padding-top: 5px;
 }
 
 .box {
-    background: rgb(128, 39, 245);
     font-weight: bold;
     text-align: center;
-    border: 6px solid rgb(157, 209, 243);
+    border-style: outset;
+    border-width: 13px;
+    border-color: rgb(3, 3, 29);
+    border-radius: 10px;
     width: 400px;
-    height: 400px;
-    font-size: 80px;
+    height: 610px; 
+    
+}
+
+.resultNumber {
+    border-bottom: 10px solid rgb(3, 3, 29);
+    background: rgb(192, 184, 184);
+    text-align: right;
+    padding: 10px;
+    font-size: 70px;
+}
+
+.firstColumn, .secondColumn, .thirdColumn, .fourthColumn, .fifthColumn  {
     display: flex;
+}
+
+
+.columnOne, .columnTwo, .columnThree, .columnFour {
+    flex-grow: 1;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    padding-bottom: 40px;
+    font-size: 25px;
+    height: 100px;
+    width: 100%;
+}
+
+.columnFive {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 100px;
+}
+
+.bigZero {
+    width: 40%;
+}
+
+.bigDot {
+    width: 15%;
+}
+
+.bigEqual {
+    width: 15%;
+}
+
+.blueButton {
+    background-color: rgb(30, 144, 255);
+}
+
+.yellowButton {
+    background-color: rgb(221, 152, 22);
+}
+
+.greenButton {
+    background-color: rgb(61, 114, 101);
 }

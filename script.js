@@ -13,7 +13,7 @@ function multiplication(array) {
 function division(array) {
     return array.reduce((sum, total) => sum / total);
 };
-
+// NEED  TO ADD BACK PROMPT ON OPERATE FUNCTION
 const numberOne = 4;
 const numberTwo = 2;
 console.log(addition(numberOne, numberTwo));
@@ -22,8 +22,8 @@ console.log(multiplication([numberOne, numberTwo]));
 console.log(division([numberOne, numberTwo]));
 
 
-function operator() {
-    let userInput = prompt("which operator do you want to use?")
+function operate() {
+    let userInput = ("which operator do you want to use?")
 
     if (userInput === "addition") {
         return addition(numberOne, numberTwo);
@@ -42,4 +42,4 @@ function operator() {
     }
 }
 
-console.log(operator());
+console.log(operate());
