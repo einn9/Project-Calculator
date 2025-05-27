@@ -7,26 +7,26 @@ let numberArray = [];
 let userInput = "";
 
 function addition(a, b) {
-    if (isNaN(b) || b == "b") {
+    if (isNaN(b)) {
         return a;
     }
     if (a + b >= 1000000000) {
         return calculatorScreen.textContent = 1000000000;  
     }
-    c = a + b;
-    numberChecked = roundLongDecimals((c));
+    let c = a + b;
+    let numberChecked = roundLongDecimals((c));
 	return numberChecked;
 };
 
 function subtraction(a, b) {
-    if (isNaN(b) || b == "b") {
+    if (isNaN(b)) {
         return a;
     }   
     if (a - b <= -1000000000) {
         return calculatorScreen.textContent = -1000000000;  
     }
-    c = a - b;
-    numberChecked = roundLongDecimals((c));
+    let c = a - b;
+    let numberChecked = roundLongDecimals((c));
 	return numberChecked;
 };
 
@@ -41,8 +41,8 @@ function multiplication(a, b) {
     {
         return calculatorScreen.textContent = -1000000000;  
     }
-    c = a * b;
-    numberChecked = roundLongDecimals((c));
+    let c = a * b;
+    let numberChecked = roundLongDecimals((c));
 	return numberChecked;
 };
 
@@ -56,8 +56,8 @@ function division(a, b) {
     if (a / b <= -1000000000) {
         return calculatorScreen.textContent = -1000000000;  
     }
-    c = a / b;
-    numberChecked = roundLongDecimals((c));
+    let c = a / b;
+    let numberChecked = roundLongDecimals((c));
     return numberChecked;
 };
 
@@ -79,7 +79,7 @@ function operate() {
     }
     else if (userInput == "division") {
         // Stop user from dividing number by 0
-        if (numberOne == "0" || numberTwo == "0") {
+        if (numberTwo == "0") {
             return calculatorScreen.textContent = "Nope."; 
         }
         return division(numberOne, numberTwo);
@@ -100,13 +100,13 @@ function roundLongDecimals(x) {
 
     // Round  decimals if number is too long
     if (beforeDecimalStr.length >= 9) {
-        let roundedNumber = Math.round(c)
+        let roundedNumber = Math.round(x)
         return roundedNumber;
     } 
 
     // Round answers with long decimals
     else if (afterDecimalStr.length >= 4) {
-        let roundedNumber = Math.round(c * 1000) / 1000
+        let roundedNumber = Math.round(x * 1000) / 1000
         return roundedNumber;
     }
     else {
