@@ -9,25 +9,23 @@
     text-align: center;
     border-style: outset;
     border-width: 13px;
-    border-color: rgb(3, 3, 29);
+    border-color: rgb(29, 9, 46);
     border-radius: 10px;
     width: 400px;
-    height: 610px; 
-    
+    height: 610px;  
 }
 
 .resultNumber {
-    border-bottom: 10px solid rgb(3, 3, 29);
+    border-bottom: 10px solid rgb(87, 20, 143);
     background: rgb(192, 184, 184);
     text-align: right;
-    padding: 10px;
+    padding: 10px 5px;
     font-size: 70px;
 }
 
 .firstColumn, .secondColumn, .thirdColumn, .fourthColumn, .fifthColumn  {
     display: flex;
 }
-
 
 .columnOne, .columnTwo, .columnThree, .columnFour {
     flex-grow: 1;
@@ -59,13 +57,17 @@
 }
 
 .blueButton {
-    background-color: rgb(30, 144, 255);
+    background-color: #4A90E2; 
 }
 
-.yellowButton {
-    background-color: rgb(221, 152, 22);
+.redButton {
+    background-color: #FF6F61;
 }
 
 .greenButton {
-    background-color: rgb(61, 114, 101);
+    background-color: #2E8B8B;
+}
+
+.active {
+    background-color:rgba(255,255,0,1);
 }
